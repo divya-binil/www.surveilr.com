@@ -7,10 +7,12 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
+  //site: "https://screwfast.uk",
   image: {
     domains: ["images.unsplash.com"],
   },
+  site: "https://surveilr-next.github.io",
+  //base: "divya-binil",
   // i18n: {
   //   defaultLocale: "en",
   //   locales: ["en", "fr"],
@@ -54,7 +56,7 @@ export default defineConfig({
         "zh-cn": { label: "简体中文", lang: "zh-CN" },
       },
       // https://starlight.astro.build/guides/sidebar/
-      sidebar: [               
+      sidebar: [
         {
           label: "Resource Surveillance",
           items: [
@@ -74,7 +76,8 @@ export default defineConfig({
       components: {
         SiteTitle: "./src/components/ui/starlight/SiteTitle.astro",
         Head: "./src/components/ui/starlight/Head.astro",
-        MobileMenuFooter: "./src/components/ui/starlight/MobileMenuFooter.astro",
+        MobileMenuFooter:
+          "./src/components/ui/starlight/MobileMenuFooter.astro",
         ThemeSelect: "./src/components/ui/starlight/ThemeSelect.astro",
       },
       head: [
